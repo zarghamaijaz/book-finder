@@ -1,0 +1,46 @@
+.pointer{
+    cursor: pointer;
+}
+.main-header{
+    width: 100%;
+    display: flex;
+    background-color: indianred;
+}
+.navigation{
+    display:flex;
+}
+.navigation p{
+    margin:5px 10px;
+    cursor: pointer;
+}
+.navigation-close-btn{
+    display: none;
+    margin: 5px 10px;
+    color:indianred
+}
+.navigation-open-btn{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .navigation{
+        display:block;
+        position: absolute;
+        z-index: 100;
+        top: 0px;
+        left: -25%;
+        transition: left 0.5s;
+        background-color:lavender;
+        min-height: 100vh;
+        min-width: 25%;
+    }
+    .navigation-open{
+        left: 0;
+    }
+    .navigation-close-btn{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navigation-open-btn{
+        display: flex;
+    }
+}

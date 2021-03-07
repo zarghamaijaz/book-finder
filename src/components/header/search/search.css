@@ -1,0 +1,16 @@
+.search-style:focus{
+    outline: none;
+}
+.search-style::placeholder{
+    color:#fff;
+}
+
+.search-style{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    border:1px solid #000;
+}
+.row{
+    align-items: center;
+}
